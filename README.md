@@ -1,3 +1,18 @@
+# Alas DAO - Staking App
+
+In this app based on the payments-api donors or edcucators can request a
+guitar and we will provide a deposit address that is bound to
+alas.openguitar.near by a smart contract.
+
+They sent the money to this address and when they approve shipping, the
+funds are transfered to us and available as Alas Funds.
+
+This prototype app solves the "staking" part described in the [metagov
+proposal](https://gov.near.org/t/proposal-alas-dao-attracting-donors-with-innovative-technology-and-social-educational-drives/). 
+Please check the Alas DAO [slides](https://docs.google.com/presentation/d/1hCNs8RpeoifHvy8ZlMH94grrl0chPVYCaz33RiZ3-Dw/edit?usp=sharing) for our full roadmap for the project.
+
+
+
 # Live App Review 5 - Payments API Part 1
 
 This repo is a companion to this video:

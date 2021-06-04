@@ -17,8 +17,8 @@ const {
 } = nearAPI;
 
 export const Keys = ({ update }) => {
-    const [name, setName] = useState('matt')
-    const [eventName, setEventName] = useState('tournamentX')
+    const [name, setName] = useState('kn00t.testnet')
+    const [eventName, setEventName] = useState('Please send a guitar to me!')
     const [implicitAccountId, setImplicitAccountId] = useState('')
     const [state, setState] = useState()
     const [fundState, setFundState] = useState()
@@ -65,32 +65,34 @@ export const Keys = ({ update }) => {
     }
 
 	return <>
-		<h3>Make a Deposit to Attend</h3>
+		<h3>Request an Open Guitar</h3>
         <input placeholder="Username" value={name} onChange={(e) => setName(e.target.value)} />
         <br />
         <input placeholder="Event Name" value={eventName} onChange={(e) => setEventName(e.target.value)} />
         <br />
-        <button onClick={() => handleCreateAccount()}>Create Account</button>
+        <button onClick={() => handleCreateAccount()}>Request Shipping</button>
+        <p>Please provide your wallet address and request shipping. Get in contact with us using the contact form.</p>
         <br />
         <br />
         <h3>Deposit Address</h3>
 
         <p>{implicitAccountId}</p>
-        <p>Balance: { state ? formatNearAmount(state.amount, 2) : '0'}</p>
+        <p>Balance: 100</p>
         <br />
-        <button onClick={() => handleCheckAccount(implicitAccountId, setState)}>Check Account</button>
+        <button onClick={() => handleCheckAccount(implicitAccountId, setState)}>Check Payment</button>
+        <p>We created a deposit address for you. Send the requested amount to the deposit address and check payment. Please wait before you Approve Shipping.</p>
         
-        <h3>Make Tournament Deposit</h3>
+        <h3>Approve Shipping</h3>
         <br />
-        <button onClick={() => handleDeposit()}>Make Deposit</button>
+        <button onClick={() => handleDeposit()}>Approve Shipping</button>
+        <p>After you approved shipping the deposit amount is send to the Alas Fund. Your Open Guitar is on its way to you.</p>
 
-
-        <h3>Tournament Funds Raised</h3>
+        <h3>Alas Funds Raised</h3>
         <p>{contractName}</p>
         <p>Balance: { fundState ? formatNearAmount(fundState.amount, 2) : '0'}</p>
         <br />
         <button onClick={() => handleCheckAccount(contractName, setFundState)}>Refresh Funds</button>
-
+        <p>You can see the collected funds and (later) who contributed them.</p>
 	</>;
 };
 

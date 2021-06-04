@@ -1,4 +1,4 @@
-const contractName = 'dev-1621301728289-99398561950429';
+const contractName = 'alas.openguitar.testnet';
 
 module.exports = function getConfig(isServer = false) {
   let config = {
