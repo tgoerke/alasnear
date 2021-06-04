@@ -11,7 +11,11 @@ This prototype app solves the "staking" part described in the [metagov
 proposal](https://gov.near.org/t/proposal-alas-dao-attracting-donors-with-innovative-technology-and-social-educational-drives/). 
 Please check the Alas DAO [slides](https://docs.google.com/presentation/d/1hCNs8RpeoifHvy8ZlMH94grrl0chPVYCaz33RiZ3-Dw/edit?usp=sharing) for our full roadmap for the project.
 
+# Live App Demo - A guitar that tracks ownership using NEAR.
 [![Live App Demo](https://img.youtube.com/vi/mrVaAxyQooY/0.jpg)](https://youtu.be/mrVaAxyQooY)
+
+OpenGuitar with pickup and convolution reverb. 
+"Evocacion" performed by Fernando Bravo.
 
 
 # Live App Review 5 - Payments API Part 1
